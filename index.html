@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+
+        #heading{
+            text-align: left;
+        }
+
+        .Signup_form{
+            width: 30%;
+            margin: 0 auto;
+            padding: 50px;
+            
+        }
+
+        .Signup_form input{
+            padding: 16px 15px;
+            width: 90%;
+            border: solid 1px;
+            margin: 10px;
+        }
+
+        #button1{
+            padding: 10px 12px;
+            margin: 5px 0;
+            width: 98%;
+            height: 1.3cm;
+            background: none;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .Signup_form button{
+            padding: 8px 8px;
+        }
+
+        #Terms{
+            width: auto;
+            height: 0.5;
+        }
+
+            h2{
+                display: flex;
+                flex-direction: row;
+            }
+
+            h2::before,
+            h2::after
+            {
+                content: "";
+                flex: 1 1;
+                border-bottom: 2px solid black;
+                margin: auto;
+            }
+
+            #icon{
+      font-size: 35px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      gap: 40px;
+
+            }
+
+    </style>
+</head>
+<body>
+        <form class=Signup_form action="login.html">
+            Already have an account?<a href="login.html">Sign In</a>
+
+                <h1 id =heading>Sign up</h1>
+                <label for="name">Name</label>
+                <br>
+                 <input id="name" placeholder="Enter name" type="text"/>
+                 <br>
+                 <label for="Email">Email</label>
+                 <br>
+                 <input id="email" placeholder="Enter email adress" type="email"/>
+                 <br>
+                 <label for="password">Password</label>
+                 <br>
+                 <input id="password" placeholder="Enter password" type="password"/>
+                 <br>
+                
+                 <input type="checkbox" id="Terms" name="Terms"/>
+                 
+                 <label>I've read and agree with<strong>The terms of Services</strong>And our<strong>Privacy Policy</strong></label> 
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+
+                 <button type="checkbox" id="button1">Sign Up</button>
+                 <br>
+
+
+                 <h2>or sign up with</h2>
+
+                 <div id="icon">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  </div>
+
+        </form>
+</body>
+</html>
